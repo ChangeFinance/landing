@@ -14,6 +14,9 @@ type AccessToken = {
 };
 
 const fetchIntercomUser = async (accessToken: AccessToken) => {
+  if(!accessToken) {
+    return null;
+  }
   const headers = new Headers();
   headers.append('Authorizaton', `Bearer ${accessToken.access_token}`);
   const userPromise = fetch(`${config.get('apiUrl')}/v1/me`, { headers });

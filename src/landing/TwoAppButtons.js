@@ -1,11 +1,11 @@
 // @flow
 import React from 'react';
 import { Button } from './ui';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import svgAndroid from './img/android-logo.svg';
 import pngTransparent from './img/transparent.png';
 import * as tracker from '../tracker/Tracker';
+import config from "react-global-configuration";
 
 const Container = styled.div`
   max-width: 400px;
