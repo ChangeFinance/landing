@@ -164,7 +164,7 @@ class Header extends React.Component<Props, State> {
                 </NavLink>
               </NavItem>
               <NavItem marginLeft>
-                <AnchorButton href={config.get('appUrl')} color="blue" size="small">
+                <AnchorButton href="https://app.getchange.com" color="blue" size="small">
                   Sign up
                 </AnchorButton>
               </NavItem>

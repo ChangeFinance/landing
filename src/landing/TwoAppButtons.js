@@ -37,7 +37,7 @@ const StyledButton = Button.extend`
 const Buttons = () => (
   <Container>
     <InnerContainer>
-      <a href={config.get('appUrl')}>
+      <a href="https://app.getchange.com">
         <StyledButton color="gradient">
           <Image height="18px" width="0" src={pngTransparent} />Web app
         </StyledButton>
