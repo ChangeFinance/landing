@@ -37,11 +37,11 @@ const StyledButton = Button.extend`
 const Buttons = () => (
   <Container>
     <InnerContainer>
-      <Link to="/app">
+      <a href="https://app.getchange.com">
         <StyledButton color="gradient">
           <Image height="18px" width="0" src={pngTransparent} />Web app
         </StyledButton>
-      </Link>
+      </a>
       <SpacingDiv />
       <a
         href="https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
