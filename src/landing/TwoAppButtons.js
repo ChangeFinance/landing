@@ -50,14 +50,20 @@ const Buttons = () => (
     <InnerContainer>
       <StyledButton
         color="gradient"
-        onClick={ () => {window.location.href = APP_STORE_LINK}}
+        onClick={ () => {
+          trackAppleAppLinkClick();
+          window.location.href = APP_STORE_LINK;
+        }}
       >
         <Image height="18px" src={svgApple} />App Store
       </StyledButton>
       <SpacingDiv />
       <StyledButton
         color="gradient"
-        onClick={ () => {window.location.href = PLAY_STORE_LINK}}
+        onClick={ () => {
+          trackAndroidAppLinkClick();
+          window.location.href = PLAY_STORE_LINK;
+        }}
       >
         <Image height="18px" src={svgAndroid} />Google Play
       </StyledButton>
