@@ -57,7 +57,7 @@ export const AboutIntro = () => (
       <p>
         The clean, minimalist look of Change’s logo was designed to fit our
         vision. The broken circle represents Change – the ability to “break the
-        loop" and take control.
+        loop" and take control. <a href="/Whitepaper.pdf">Read more.</a>
       </p>
     </IntroBody>
   </Container>

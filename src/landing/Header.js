@@ -94,7 +94,7 @@ const NavLink = styled(Link) `
   `};
 `;
 
-const NavAnchor = NavLink.withComponent('a');
+// const NavAnchor = NavLink.withComponent('a');
 
 type Props = {
   location: Object,
@@ -148,13 +148,13 @@ class Header extends React.Component<Props, State> {
             <Nav>
               <NavItem>
                 <NavItem>
-                  <NavAnchor
-                    href="/Whitepaper.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Whitepaper
-                  </NavAnchor>
+                  {/*<NavAnchor*/}
+                    {/*href="/Whitepaper.pdf"*/}
+                    {/*target="_blank"*/}
+                    {/*rel="noopener noreferrer"*/}
+                  {/*>*/}
+                    {/*Whitepaper*/}
+                  {/*</NavAnchor>*/}
                 </NavItem>
                 <NavItem>
                   <NavLink to="/about">About</NavLink>

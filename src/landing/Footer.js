@@ -59,7 +59,7 @@ const ItemLink = styled(Link)`
   `};
 `;
 
-const ItemAnchor = ItemLink.withComponent('a');
+// const ItemAnchor = ItemLink.withComponent('a');
 
 const SocialContainer = styled.div`
   text-align: center;
@@ -106,15 +106,15 @@ export const Footer = () => (
   <Container>
     <InnerContainer>
       <ItemsContainer>
-        <Item>
-          <ItemAnchor
-            href="/Whitepaper.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Whitepaper
-          </ItemAnchor>
-        </Item>
+        {/*<Item>*/}
+          {/*<ItemAnchor*/}
+            {/*href="/Whitepaper.pdf"*/}
+            {/*target="_blank"*/}
+            {/*rel="noopener noreferrer"*/}
+          {/*>*/}
+            {/*Whitepaper*/}
+          {/*</ItemAnchor>*/}
+        {/*</Item>*/}
         <Item>
           <ItemLink to="/about">About</ItemLink>
         </Item>
@@ -146,13 +146,13 @@ export const Footer = () => (
         >
           Terms & Conditions
         </LegalLink>
-        <LegalLink
-          href="/bug-bounty.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Bug Bounty
-        </LegalLink>
+        {/*<LegalLink*/}
+          {/*href="/bug-bounty.pdf"*/}
+          {/*target="_blank"*/}
+          {/*rel="noopener noreferrer"*/}
+        {/*>*/}
+          {/*Bug Bounty*/}
+        {/*</LegalLink>*/}
       </CompanyContainer>
     </InnerContainer>
   </Container>

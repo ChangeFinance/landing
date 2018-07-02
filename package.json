@@ -23,6 +23,7 @@
     "react-google-tag-manager": "^2.2.1",
     "react-intercom": "^1.0.14",
     "react-modal": "^3.4.4",
+    "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
     "react-scroll-to-component": "^1.0.2",

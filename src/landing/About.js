@@ -7,7 +7,6 @@ import AboutFacts from './AboutFacts';
 import AboutIntro from './AboutIntro';
 import logoBlockchainAssets from './img/partners/blockchain-assets.png';
 
-import logoeResidency from './img/partners/e-residency.png';
 import logoICOBank from './img/partners/ico-bank.png';
 import logoKRToken from './img/partners/kr-token.png';
 import logoMothership from './img/partners/mothership.png';
@@ -39,7 +38,7 @@ import imageJayr from './img/people/jayr.jpg';
 import LogoStrip from './LogoStrip';
 import Team from './Team';
 import Timeline from './Timeline';
-import Token from './Token';
+// import Token from './Token';
 
 import { NavButton } from './ui';
 
@@ -73,12 +72,6 @@ export const About = () => (
     <LogoStrip
       title="Partners"
       items={[
-        {
-          name: 'e-Residency',
-          image: logoeResidency,
-          link:
-            'http://fintechnews.sg/1483/roboadvisor/smartly-sg-announces-robo-advisor-targeted-southeast-asian-millennials/',
-        },
         {
           name: 'Mothership',
           image: logoMothership,
@@ -273,7 +266,7 @@ export const About = () => (
         Open positions
       </NavButton>
     </CareersCTA>
-    <Token />
+    {/*<Token />*/}
     <IntercomBubble />
   </Container>
 );

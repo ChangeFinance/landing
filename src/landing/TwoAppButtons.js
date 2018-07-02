@@ -7,7 +7,7 @@ import svgApple from './img/ios-logo.svg';
 import * as tracker from '../tracker/Tracker';
 
 const APP_STORE_LINK = "https://itunes.apple.com/ee/app/change-wallet/id1375897908?mt=8&app=itunes&ign-mpt=uo%3D4";
-const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova"
+const PLAY_STORE_LINK = "https://play.google.com/store/apps/details?id=com.getchange.wallet.cordova";
 
 const Container = styled.div`
   max-width: 400px;
@@ -36,7 +36,6 @@ const trackAppleAppLinkClick = () => {
 };
 
 const StyledButton = Button.extend`
-  display: flex;
   padding-left: 20px;
   padding-right: 20px;
   @media only screen and (max-device-width: 480px){
