@@ -146,13 +146,13 @@ export const Footer = () => (
         >
           Terms & Conditions
         </LegalLink>
-        {/*<LegalLink*/}
-          {/*href="/bug-bounty.pdf"*/}
-          {/*target="_blank"*/}
-          {/*rel="noopener noreferrer"*/}
-        {/*>*/}
-          {/*Bug Bounty*/}
-        {/*</LegalLink>*/}
+        <LegalLink
+          href="/bug-bounty.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Bug Bounty
+        </LegalLink>
       </CompanyContainer>
     </InnerContainer>
   </Container>
