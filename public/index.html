@@ -35,6 +35,15 @@
         Learn how to configure a non-root public URL by running `npm run build`.
       -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'none';
+    style-src 'self' 'unsafe-inline' *.googleapis.com;
+    script-src 'self' *.google-analytics.com *.googleapis.com *.googletagmanager.com *.mixpanel.com data:;
+    connect-src 'self' *.google-analytics.com *.googleapis.com *.googletagmanager.com *.gstatic.com *.mixpanel.com data:;
+    font-src 'self' *.gstatic.com data:;
+    img-src * data:;
+    "
+  >
   <title>Change</title>
 </head>
 
