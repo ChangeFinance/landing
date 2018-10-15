@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Slider from "react-slick";
 
 import Contact from './Contact';
+import { Link } from 'react-router-dom';
 
 import headerImg from './img/header.jpg';
 import checkImg from './img/checkmark.svg';
@@ -16,6 +17,7 @@ import img5 from './img/office-rent/5.jpg';
 import img6 from './img/office-rent/6.jpg';
 import img7 from './img/office-rent/7.jpg';
 import img8 from './img/office-rent/8.png';
+import {Button} from "./ui";
 
 
 const Container = styled.div`
@@ -170,11 +172,27 @@ const MoreInfoContainer = styled.div`
   margin-top: 40px;
 `;
 
+const StyledButton = Button.extend`
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media only screen and (max-device-width: 480px){
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+`;
+
+const StyledLink = styled.div`
+  text-decoration: none !important;
+`;
+
 const Header = () => (
   <HeaderContainer>
     <WhiteSubHeading>Looking for an office to rent?</WhiteSubHeading>
     <WhiteHeading>We are looking for neighbours</WhiteHeading>
     <WhiteSmallSubHeading>Exclusive new 2-floor office for rent in Tallinn city center</WhiteSmallSubHeading>
+    <br/>
+    <StyledLink><Link to="/office-rent/#officecontacts"><StyledButton color="white">Contact us</StyledButton></Link></StyledLink>
   </HeaderContainer>
 );
 
