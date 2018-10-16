@@ -1474,9 +1474,9 @@ chalk@^2.0.0, chalk@^2.0.1, chalk@^2.1.0, chalk@^2.4.1:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-"change-bootstrap@https://github.com/ChangeFinance/change-bootstrap":
+"change-bootstrap@https://github.com/ChangeFinance/change-bootstrap.git":
   version "4.0.0-beta.4"
-  resolved "https://github.com/ChangeFinance/change-bootstrap#1e5b99b16b8046d4625f9071a585b366b754c717"
+  resolved "https://github.com/ChangeFinance/change-bootstrap.git#5d9d0ac3f50b6b99072fb823ffa35fdb32cc5af5"
 
 chardet@^0.4.0:
   version "0.4.2"
