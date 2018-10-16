@@ -331,9 +331,9 @@ const OfficeRent = () => (
     <Header></Header>
     <InnerContainer>
       <Features></Features>
+      <Contact></Contact>
       <Photos></Photos>
       <MoreInfo></MoreInfo>
-      <Contact></Contact>
     </InnerContainer>
   </Container>
 );
