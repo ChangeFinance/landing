@@ -1,7 +1,8 @@
 // @flow
 import React from 'react';
 import styled from 'styled-components';
-import Slider from "react-slick";
+import ImageGallery from 'react-image-gallery';
+import breakpoint from 'styled-components-breakpoint';
 
 import Contact from './Contact';
 import { Link } from 'react-router-dom';
@@ -18,6 +19,8 @@ import img6 from './img/office-rent/6.jpg';
 import img7 from './img/office-rent/7.jpg';
 import img8 from './img/office-rent/8.png';
 import {Button} from "./ui";
+import variables from './ui/variables';
+
 
 
 const Container = styled.div`
@@ -39,11 +42,9 @@ const HeaderContainer = styled.div`
 `;
 
 const WhiteHeading = styled.h1`
-  font-family: OpenSans;
-  font-size: 40px;
+  font-family: ${variables.fontPrimary};
+  font-size: ${variables.fontSizeSuperLarge};
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1;
   letter-spacing: -3px;
   text-align: center;
@@ -51,74 +52,44 @@ const WhiteHeading = styled.h1`
 `;
 
 const BlackHeading = styled.h1`
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+ font-family: ${variables.fontPrimaryBold};
+ font-size: ${variables.fontSizeMedium};
   padding-top: 15px;
 `;
 
 const BlackParagraph = styled.p`
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-family: ${variables.fontPrimary};
+   font-size: ${variables.fontSizeNormal};;
   text-align: justify;
 `;
 
 const WhiteSubHeading = styled.h2`
-  font-family: OpenSans;
-  font-size: 30px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-family: ${variables.fontPrimary};
+  font-size: ${variables.fontSizeLargest};
   text-align: center;
   color: #eeeeee;
 `;
 
 const WhiteSmallSubHeading = styled.h3`
-  font-family: OpenSans;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-family: ${variables.fontPrimary};
+  font-size: ${variables.fontSizeLarge};
   text-align: center;
   color: #eeeeee;
   margin-top: 20px;
 `;
 
 const InnerContainer = styled.div`
-  padding: 0 80px;
+  margin: 0 5%;
 `;
 
 const FeatureTitle = styled.p`
-  font-family: OpenSans;
-  font-size: 18px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-family: ${variables.fontPrimaryBold};
+ font-size: ${variables.fontSizeMedium};
 `;
 
 const FeatureDescription = styled.p`
-  font-family: OpenSans;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
+  font-family: ${variables.fontPrimary};
+  font-size: ${variables.fontSizeNormal};;
 `;
 
 const FeatureContainer = styled.div`
@@ -127,7 +98,6 @@ const FeatureContainer = styled.div`
   align-items: flex-start;
   width: 350px;
   min-height: 180px;
-  margin-bottom: 15px;
 `;
 
 const FeatureSet = styled.div`
@@ -142,15 +112,24 @@ const FeaturesContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  
   img {
     margin-bottom: 10px;
   }
 `;
 
 const PhotosContainer = styled.div`
-  width: 100%;
-  max-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-left:auto;
+  margin-right:auto;
+  max-width: 550px;
+  ${breakpoint('mobile')`
+    transform: scale(0.5);
+  `};
+  ${breakpoint('desktop')`
+   transform: scale(1);
+  `};
 `;
 
 
@@ -230,82 +209,50 @@ const Features = () => (
   </FeaturesContainer>
 );
 
-function CustomNextArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "flex", "justify-content": "center", background: "#000" }}
-      onClick={onClick}
-    />
-  );
-}
-
-function CustomPrevArrow(props: any) {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "flex", "justify-content": "center", background: "#000" }}
-      onClick={onClick}
-    />
-  );
-}
-
 const Photos = () => {
-  const settings = {
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    infinite: true,
-    variableWidth: true,
-    variableHeight: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />
-  };
+  const images = [
+      {
+        original: img1,
+        thumbnail: img1,
+        description:'EU House'
+      },
+      {
+        original: img2,
+        thumbnail: img2,
+        description:'Floor plan',
+      },
+      {
+        original: img3,
+        thumbnail: img3,
+        description:'Floor plan'
+      },
+      {
+        original: img4,
+        thumbnail: img4,
+        description:'Floor plan'
+      },
+      {
+        original: img5,
+        thumbnail: img5
+      },
+      {
+        original: img6,
+        thumbnail: img6
+      },
+      {
+        original: img7,
+        thumbnail: img7
+      },
+      {
+        original: img8,
+        thumbnail: img8
+      }
+    ]
+ 
 
   return <PhotosContainer>
-    <Slider {...settings}>
-      <div>
-        <a href={img1} target="_blank" rel="noopener noreferrer">
-          <img src={img1} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img2} target="_blank" rel="noopener noreferrer">
-          <img src={img2} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img3} target="_blank" rel="noopener noreferrer">
-          <img src={img3} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img4} target="_blank" rel="noopener noreferrer">
-          <img src={img4} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img5} target="_blank" rel="noopener noreferrer">
-          <img src={img5} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img6} target="_blank" rel="noopener noreferrer">
-          <img src={img6} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img7} target="_blank" rel="noopener noreferrer">
-          <img src={img7} height="300" alt="Office" />
-        </a>
-      </div>
-      <div>
-        <a href={img8} target="_blank" rel="noopener noreferrer">
-          <img src={img8} height="300" alt="Office" />
-        </a>
-      </div>
-    </Slider>
+    <ImageGallery 
+    items={images} />
   </PhotosContainer>
 };
 

@@ -21,6 +21,7 @@
     "react-dom": "^16.3.2",
     "react-global-configuration": "^1.2.1",
     "react-google-tag-manager": "^2.2.1",
+    "react-image-gallery": "^0.8.12",
     "react-intercom": "^1.0.14",
     "react-modal": "^3.4.4",
     "react-router": "^4.2.0",
