@@ -2,7 +2,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import ScrollToTarget from './ScrollToTarget';
-import breakpoint from 'styled-components-breakpoint';
 import reelika from './img/people/reelika.jpg';
 import variables from '../ui/variables';
 

@@ -35,11 +35,7 @@
   src: url('fonts/favorit-bold.woff') format('woff');
 }
 
-@import "../node_modules/slick-carousel/slick/slick.css";
-@import "../node_modules/slick-carousel/slick/slick-theme.css";
 @import "../node_modules/react-image-gallery/styles/css/image-gallery.css";
-
-
 body {
   font-family: OpenSans, Fallback, sans-serif;
   font-size: 16px;
