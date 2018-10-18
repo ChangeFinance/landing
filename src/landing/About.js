@@ -16,14 +16,11 @@ import imageDragos from './img/people/dragos.jpg';
 import imageFrancisco from './img/people/francisco.jpg';
 import imageGustav from './img/people/gustav.jpg';
 import imageHelen from './img/people/helen.jpg';
-import imageJordan from './img/people/jordan.jpg';
-import imageErko from './img/people/erko.jpg';
 import imageKristjan from './img/people/kristjan.jpg';
 import imageMiguel from './img/people/miguel.jpg';
 import imageCofi from './img/people/cofi.jpg';
 import imageRoger from './img/people/roger.jpg';
 import imageLiisi from './img/people/liisi.jpg';
-import imageMaido from './img/people/maido.jpg';
 import imageAnna from './img/people/anna.jpg';
 import imageAlice from './img/people/alice.jpg';
 import imageKadi from './img/people/kadi.jpg';
@@ -139,24 +136,6 @@ export const About = () => (
           title: 'Partnerships',
           linkedin: 'http://bit.ly/2zuj9AS',
           image: imageDragos,
-        },
-        {
-          name: 'Jordan Valdma',
-          title: 'CTO',
-          linkedin: 'http://bit.ly/2GwVZwg',
-          image: imageJordan,
-        },
-        {
-          name: 'Erko Risthein',
-          title: 'Full Stack Product Engineer',
-          linkedin: 'http://bit.ly/2wVzDov',
-          image: imageErko,
-        },
-        {
-          name: 'Maido Käära',
-          title: 'Full Stack Product Engineer',
-          linkedin: 'http://bit.ly/2KCFykn',
-          image: imageMaido,
         },
         {
           name: 'Liisi Eenmaa',
