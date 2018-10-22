@@ -92,7 +92,7 @@ export const TermsAndConditionsText = () => (
                 </li>
                 <li>
                   <span class="bold">Change</span> or{' '}
-                  <span class="bold">Company</span> – xChange OÜ, an Estonian
+                  <span class="bold">Company</span> – xChange AS, an Estonian
                   limited liability company registered under registry code
                   14428150. References to “<span class="bold">we</span>”, “<span class="bold">
                     us
@@ -103,19 +103,7 @@ export const TermsAndConditionsText = () => (
                   <span class="bold">Change Tokens</span> or{' '}
                   <span class="bold">Tokens</span> – cryptographic ERC-20 tokens
                   issued by Change, which are at the date of these Terms and
-                  Conditions trading at the cryptocurrency markets Bibox.com (<a
-                    href="https://www.bibox.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://www.bibox.com/
-                  </a>), OKEX (<a
-                    href="https://www.okex.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    https://www.okex.com/
-                  </a>) and KuCoin (<a
+                  Conditions trading on the cryptocurrency market KuCoin (<a
                     href="https://www.kucoin.com/"
                     target="_blank"
                     rel="noopener noreferrer"

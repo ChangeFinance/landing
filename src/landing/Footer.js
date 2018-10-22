@@ -143,7 +143,7 @@ export const Footer = () => (
       </SocialContainer>
 
       <CompanyContainer>
-        <Company>All Rights Reserved © xChange OÜ</Company>
+        <Company>All Rights Reserved © xChange AS</Company>
         <LegalLink
           href="https://getchange.com/legal/terms/"
           target="_blank"
