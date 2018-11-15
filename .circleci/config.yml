@@ -5,7 +5,7 @@
 defaults: &defaults
   working_directory: ~/landing
   docker:
-    - image: circleci/node:10
+    - image: circleci/node:11.1
 
 version: 2
 jobs:
