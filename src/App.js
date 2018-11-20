@@ -36,7 +36,7 @@ export const App = () => (
           <Route path="/security-token-offering" component={Landing} />
           <Route path="/app" component={Landing} />
           <Route path="/office-rent" component={Landing} />
-          <Route path='/moontech' component={() => window.location = 'https://getchange.typeform.com/to/cFeqSl'} />
+          <Route path='/moontec' component={() => window.location = 'https://getchange.typeform.com/to/cFeqSl'} />
 
         </Switch>
       </BrowserRouter>
