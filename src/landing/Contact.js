@@ -41,7 +41,7 @@ const Support = () => (
       <InnerContainer>
         <img src={reelika} height="90" width="90" alt="Reelika" />
         <Heading>Contact us via chat, email and phone</Heading>
-        <Paragraph>Sounds great? Write to us at <a href="mailto:reelika@getchange.com">reelika@getchange.com</a> or call +372 5623 8950</Paragraph>
+        <Paragraph>Sounds great? Write to us at <a href="mailto:alice@getchange.com">alice@getchange.com</a> or call +372 5623 8950</Paragraph>
       </InnerContainer>
     </Container>
   </ScrollToTarget>
