@@ -188,8 +188,8 @@ const Features = () => (
       <li>EU House, Rävala Avenue 4</li>
       <li>9th and 10th floor</li>
       <li>209 m2 office space + 500 m2 roof terrace + 100 m2 chill area</li>
-      <li>18 EUR/m2. Common areas and terrace free of charge.</li>
-      <li>In renovation, available from mid November 2018.</li>
+      <li>18.5 EUR/m2. Common areas and terrace free of charge.</li>
+      <li>In renovation, available from January 2019.</li>
     </Bullets>
     <br /><br />
     <FeatureSet>
