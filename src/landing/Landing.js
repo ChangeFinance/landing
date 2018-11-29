@@ -16,7 +16,6 @@ import PrivacyPolicy from './PrivacyPolicy';
 import { SecurityTokenOffering } from './SecurityTokenOffering';
 
 import ScrollToTop from './ScrollToTop';
-import TokenSwapTerms from './TokenSwapTerms';
 import TermsAndConditions from './TermsAndConditions';
 
 import variables from '../ui/variables';
@@ -80,7 +79,6 @@ class Landing extends React.Component<Props, State> {
             <Route path="/legal/terms" component={TermsAndConditions} />
             <Route path="/legal/privacy-policy" component={PrivacyPolicy} />
             <Route path="/legal/definitions" component={LegalDefinitions} />
-            <Route path="/legal/token-swap-terms" component={TokenSwapTerms} />
             <Route path="/notify-me-success" component={NotifyMeSuccess} />
             <Route path="/security-token-offering" component={SecurityTokenOffering} />
             <Route path="/app" component={AppPlaceholder} />
