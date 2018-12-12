@@ -11,6 +11,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
 import AppPlaceholder from './AppPlaceholder'
+import ContactUs from './ContactUs'
 import NotifyMeSuccess from './NotifyMeSuccess';
 import PrivacyPolicy from './PrivacyPolicy';
 import { SecurityTokenOffering } from './SecurityTokenOffering';
@@ -82,6 +83,7 @@ class Landing extends React.Component<Props, State> {
             <Route path="/notify-me-success" component={NotifyMeSuccess} />
             <Route path="/security-token-offering" component={SecurityTokenOffering} />
             <Route path="/app" component={AppPlaceholder} />
+            <Route path="/contact-us" component={ContactUs} />
             <Route path="/office-rent" component={OfficeRent} />
             <Route path="/" component={Home} />
           </Switch>
