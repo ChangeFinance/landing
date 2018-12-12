@@ -35,6 +35,7 @@ export const App = () => (
           <Route path="/notify-me-success" component={Landing} />
           <Route path="/security-token-offering" component={Landing} />
           <Route path="/app" component={Landing} />
+          <Route path="/contact-us" component={Landing} />
           <Route path="/office-rent" component={Landing} />
           <Route path='/moontec' component={() => window.location = 'https://getchange.typeform.com/to/cFeqSl'} />
           <Route path='/bitcoinprice' component={() => window.location = 'https://getchange.typeform.com/to/cFeqSl'} />

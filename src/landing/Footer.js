@@ -122,6 +122,9 @@ export const Footer = () => (
           <ItemLink to="/careers">Careers</ItemLink>
         </Item>
         <Item>
+          <ItemLink to="/contact-us">Contact us</ItemLink>
+        </Item>
+        <Item>
           <ItemLink to="https://support.getchange.com/" target="_blank">
             Support
           </ItemLink>
