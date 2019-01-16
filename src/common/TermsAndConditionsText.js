@@ -94,7 +94,7 @@ export const TermsAndConditionsText = () => (
                   <span class="bold">Change</span> or{' '}
                   <span class="bold">Company</span> – xChange AS, an Estonian
                   limited liability company registered under registry code
-                  14428150. References to “<span class="bold">we</span>”, “<span class="bold">
+                  14428150, Rävala pst 4, 10143 Tallinn. References to “<span class="bold">we</span>”, “<span class="bold">
                     us
                   </span>” and “<span class="bold">our</span>” mean references
                   to Change.
