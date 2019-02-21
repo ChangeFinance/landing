@@ -37,6 +37,7 @@ export const App = () => (
           <Route path="/app" component={Landing} />
           <Route path="/contact-us" component={Landing} />
           <Route path="/office-rent" component={Landing} />
+          <Route path="/order-confirmed" component={Landing} />
           <Route path='/moontec' component={() => window.location = 'https://getchange.typeform.com/to/cFeqSl'} />
           <Route path='/bitcoinprice' component={() => window.location = 'https://getchange.typeform.com/to/cFeqSl'} />
 

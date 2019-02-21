@@ -22,6 +22,7 @@ import TermsAndConditions from './TermsAndConditions';
 import variables from '../ui/variables';
 import { LegalDefinitions } from './LegalDefinitions';
 import OfficeRent from './OfficeRent';
+import OrderConfirmed from './OrderConfirmed';
 
 const Container = styled.div`
   overflow: hidden;
@@ -84,6 +85,7 @@ class Landing extends React.Component<Props, State> {
             <Route path="/security-token-offering" component={SecurityTokenOffering} />
             <Route path="/app" component={AppPlaceholder} />
             <Route path="/contact-us" component={ContactUs} />
+            <Route path="/order-confirmed" component={OrderConfirmed} />
             <Route path="/office-rent" component={OfficeRent} />
             <Route path="/" component={Home} />
           </Switch>
