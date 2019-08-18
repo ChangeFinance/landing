@@ -58,7 +58,7 @@ export const SocialIcons = () => (
           </Link>
         </Icon>
         <Icon>
-          <Link to="https://www.facebook.com/changefinance/" target="_blank">
+          <Link to="https://www.facebook.com/changeinvest/" target="_blank">
             <IconImage src={svgFacebook} alt="Facebook" />
           </Link>
         </Icon>
